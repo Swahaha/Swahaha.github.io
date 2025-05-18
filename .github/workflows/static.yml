@@ -42,13 +42,13 @@ jobs:
               templateId: '${{ secrets.EMAILJS_TEMPLATE_ID }}'
             }
           };" > config.js
-          mkdir -p public/js
-          cp config.js public/js/config.js
+          mkdir -p js
+          cp config.js js/config.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: ''
 
       - name: Deploy to GitHub Pages
         id: deployment
