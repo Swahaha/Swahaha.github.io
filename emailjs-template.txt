@@ -1,0 +1,13 @@
+Template Name: Contact Form
+Template ID: template_contact
+
+Subject: New Contact Form Submission from {{from_name}}
+
+Body:
+Name: {{from_name}}
+Email: {{from_email}}
+
+Message:
+{{message}}
+
+This email was sent from your personal website contact form. 
