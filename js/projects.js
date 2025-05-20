@@ -150,6 +150,27 @@ const projects = [
   </p>`    
     },
     {
+        id: "vladoggo",
+        title: "VLAdoggo (in progress)",
+        description: "A Vision Language Action model for the Unitree Go2 robot that enables natural language control through voice commands.",
+        image: "images/go2.png",
+        tech: ["Vision-Language-Action", "ROS2", "C++", "OpenAI SDK", "Computer Vision",  "AI agents", "LangGraph"],
+        status: "building",
+        github: "https://github.com/Swahaha/VLAdoggo",
+        fullDescription: `  
+        <p>
+    VLAdoggo is an in-progress project that enables natural language control of a Unitree Go2 robot.
+    Users can issue simple voice commands like “Go sit near the red box,” and the robot interprets and executes the task autonomously.
+  </p>
+  <p>
+    The system integrates several components: voice transcription, command parsing via LLMs, real-time object detection, motion planning with ROS2,
+    and physical actuation through the Unitree Go2 SDK. It updates continuously based on visual feedback and environmental changes.
+  </p>
+  <p>
+    As someone passionate about Embodied AI, I’m excited to explore the intersection of vision-language models and real-world robotics through this project.
+  </p>
+`    },
+    {
         id: "musis",
         title: "Musis",
         description: "An optical music recognition interface designed to convert sheet music into editable formats like MusicXML or MIDI.",
@@ -171,28 +192,7 @@ const projects = [
   <p>
     The project is ongoing and ambitious, tackling a problem few tools in the world have attempted. But it's been very well-received by people in the music and audio production space.
   </p> `    
-    },
-    {
-        id: "vladoggo",
-        title: "VLAdoggo",
-        description: "A Vision Language Action model for the Unitree Go2 robot that enables natural language control through voice commands.",
-        image: "images/go2.png",
-        tech: ["Vision-Language-Action", "ROS2", "C++", "OpenAI SDK", "Computer Vision",  "AI agents", "LangGraph"],
-        status: "building",
-        github: "https://github.com/Swahaha/VLAdoggo",
-        fullDescription: `  
-        <p>
-    VLAdoggo is an in-progress project that enables natural language control of a Unitree Go2 robot.
-    Users can issue simple voice commands like “Go sit near the red box,” and the robot interprets and executes the task autonomously.
-  </p>
-  <p>
-    The system integrates several components: voice transcription, command parsing via LLMs, real-time object detection, motion planning with ROS2,
-    and physical actuation through the Unitree Go2 SDK. It updates continuously based on visual feedback and environmental changes.
-  </p>
-  <p>
-    As someone passionate about Embodied AI, I’m excited to explore the intersection of vision-language models and real-world robotics through this project.
-  </p>
-`    }
+    }
 ];
 
 // Wait for DOM to be fully loaded
