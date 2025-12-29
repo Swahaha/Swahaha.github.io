@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            
+
             if (href !== '#') {
                 e.preventDefault();
-                
+
                 const targetElement = document.querySelector(href);
                 if (targetElement) {
                     window.scrollTo({
@@ -41,6 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Projects TOC toggle for mobile
+    const tocToggle = document.getElementById('toc-toggle');
+    const projectsToc = document.getElementById('projects-toc');
+
+    if (tocToggle && projectsToc) {
+        tocToggle.addEventListener('click', function() {
+            tocToggle.classList.toggle('active');
+            projectsToc.classList.toggle('show');
+        });
+    }
     
     // Form submission handling
     const contactForm = document.getElementById('contact-form');
