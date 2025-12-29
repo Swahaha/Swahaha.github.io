@@ -837,51 +837,45 @@ footer {
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
     opacity: 1;
   }
 }
 
 @keyframes slideInUp {
   from {
-    transform: translateY(50px);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 
 .animate-fade-in {
-  animation: fadeIn var(--transition-slow) forwards;
+  animation: fadeIn 0.3s forwards;
 }
 
 .animate-slide-left {
-  animation: slideInLeft var(--transition-slow) forwards;
+  animation: slideInLeft 0.3s forwards;
 }
 
 .animate-slide-right {
-  animation: slideInRight var(--transition-slow) forwards;
+  animation: slideInRight 0.3s forwards;
 }
 
 .animate-slide-up {
-  animation: slideInUp var(--transition-slow) forwards;
+  animation: slideInUp 0.3s forwards;
 }
 
 /* Info Cards Section */
