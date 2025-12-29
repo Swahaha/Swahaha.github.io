@@ -31,7 +31,7 @@
   
   /* Typography */
   --font-main: 'Montserrat', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
+  --font-secondary: 'Lora', serif;
   --font-size-base: 16px;
   --font-size-h1: 3.5rem;
   --font-size-h2: 2.5rem;
@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
   font-weight: 700;
   margin-top: 0;
+  font-family: var(--font-secondary);
 }
 
 h1 {
